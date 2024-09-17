@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Memoria</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Enlace a tu archivo CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container text-center mt-5">
+    <div class="d-flex justify-content-end">
+      <h5>Victorias: <span id="victorias">0</span></h5>
+    </div>
+    <h1>Juego de Memoria</h1>
+    <div id="grid" class="grid-container"></div>
+    <button id="startButton" class="btn btn-primary mt-3">Comenzar</button>
+  </div>
+
+  <!-- Mensaje de fin de juego -->
+  <div id="gameMessage" class="game-message d-none">
+    <div class="message-content">
+      <h1 id="messageText"></h1>
+      <button id="playAgain" class="btn btn-light mt-3">Jugar de nuevo</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS y dependencias -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Enlace a tu archivo JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
